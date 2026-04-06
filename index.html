@@ -1,36 +1,45 @@
 <!DOCTYPE html>
-<html>
+<html lang="tr">
 <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Kehanet Odas&#x131;</title>
+    <title>Kehanet Odası</title>
     <script src="https://cdn.tailwindcss.com"></script>
-    <link rel="stylesheet" href="/assets/tarot-style.css">
+
+    <link rel="stylesheet" href="assets/tarot-style.css">
 </head>
 <body class="bg-black">
 
-    <div id="setup-area">
-    <h1 class="gold-text">TAROT KEHANETİ</h1>
-    <div class="menu-grid">
-        <div onclick="startReading('single')" class="menu-card">TEK KART</div>
-        <div onclick="startReading('triple')" class="menu-card">ÜÇ KART</div>
-        <div onclick="startReading('penta')" class="menu-card">BEŞ KART</div>
-    </div>
-    <select id="category" class="bg-black border-b border-gold text-white p-2 mt-5">
-        <option value="desc">GENEL BAKIŞ</option>
-        <option value="love">AŞK HAYATI</option>
-        <option value="career">PARA & KARİYER</option>
-        <option value="yesno">EVET / HAYIR</option> </select>
-    </select>
-</div>
-<div id="game-area" style="display:none;">
-    <h2 id="status-title" class="gold-text">KARTLARINI SEÇ</h2>
-    <div id="slot-container" class="slot-container"></div>
-    <div id="main-deck" class="deck-container"></div>
-    <button id="reveal-btn" onclick="showResult()" style="display:none;" class="retry-btn">KEHANETİ AÇ</button>
-</div>
-<div id="result-area" style="display:none;"></div>
+    <div id="setup-area" class="container mx-auto px-4 py-10">
+        <h1 class="gold-text text-4xl mb-8">TAROT KEHANETİ</h1>
+        <div class="menu-grid">
+            <div onclick="startReading('single')" class="menu-card"><h3>TEK KART</h3></div>
+            <div onclick="startReading('triple')" class="menu-card"><h3>ÜÇ KART</h3></div>
+            <div onclick="startReading('penta')" class="menu-card"><h3>BEŞ KART</h3></div>
+        </div>
 
-    <script src="/assets/tarot-game.js"></script>
+        <div class="mt-10">
+            <label class="text-gold block mb-2">SORU KATEGORİSİ SEÇ:</label>
+            <select id="category" class="bg-black border border-gold text-white p-3 rounded-lg w-full max-w-xs cursor-pointer">
+                <option value="desc">GENEL BAKIŞ</option>
+                <option value="love">AŞK HAYATI</option>
+                <option value="career">PARA & KARİYER</option>
+                <option value="yesno">EVET / HAYIR</option>
+            </select>
+        </div>
+    </div>
+
+    <div id="game-area" style="display:none;" class="py-10">
+        <h2 id="status-title" class="gold-text text-2xl mb-5">KARTLARINI SEÇ</h2>
+        <div id="slot-container" class="slot-container"></div>
+        <div id="main-deck" class="deck-container"></div>
+        <div class="text-center">
+            <button id="reveal-btn" onclick="showResult()" style="display:none;" class="retry-btn">KEHANETİ AÇ</button>
+        </div>
+    </div>
+
+    <div id="result-area" style="display:none;" class="py-10 text-center"></div>
+
+    <script src="assets/tarot-game.js"></script>
 </body>
 </html>
