@@ -37,7 +37,7 @@ const storyElements = {
 };
 
 // 1. Veri Yükleme
-fetch('/assets/tarot-data.json')
+fetch('assets/tarot-data.json')
     .then(res => res.json())
     .then(data => {
         tarotData = data.cards || data;
@@ -142,9 +142,8 @@ function showResult() {
 
         cardsHtml += `
             <div class="result-card">
-                <img src="/assets/images/${card.id}.jpg" 
-                     onerror="this.onerror=null; this.src='/assets/images/0.jpg';" 
-                     alt="${card.name}">
+                <img src="assets/images/${card.id}.jpg" 
+     onerror="this.onerror=null; this.src='assets/images/0.jpg';"
                 <h3 class="gold-text">${card.name}</h3>
                 <p>${content}</p>
             </div>`;
