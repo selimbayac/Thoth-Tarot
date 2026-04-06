@@ -1,0 +1,283 @@
+/* GENEL AYARLAR */
+:root {
+    --gold: #d4af37;
+    --gold-low: rgba(212, 175, 55, 0.2);
+    --bg-dark: #050505;
+    --card-bg: rgba(15, 15, 20, 0.98);
+}
+
+body {
+    background: var(--bg-dark);
+    background-image: radial-gradient(circle at center, #1a1a24 0%, #050505 100%);
+    color: #e2e8f0;
+    font-family: 'Segoe UI', Roboto, -apple-system, sans-serif;
+    text-align: center;
+    min-height: 100vh;
+    margin: 0;
+    padding-bottom: 50px;
+    overflow-x: hidden;
+}
+
+/* Hiyerarşi Düzenleme */
+.gold-text {
+    color: var(--gold);
+    text-shadow: 0 0 12px rgba(212, 175, 55, 0.4);
+    font-weight: 600;
+}
+
+/* SLOTLAR (Seçilen Kartların Gittiği Yer) */
+.slot-container {
+    display: flex;
+    justify-content: center;
+    gap: 12px;
+    margin: 20px auto;
+    padding: 15px;
+    position: -webkit-sticky;
+    position: sticky;
+    top: 0;
+    z-index: 100;
+    background: rgba(5, 5, 5, 0.9);
+    backdrop-filter: blur(10px); /* Modern tarayıcılarda şık durur */
+    max-width: 600px;
+}
+
+.card-slot {
+    width: 60px;
+    height: 90px;
+    border: 1px dashed var(--gold-low);
+    border-radius: 8px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 14px;
+    background: rgba(0,0,0,0.4);
+    transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+    .card-slot.active {
+        border: 1.5px solid var(--gold);
+        color: var(--gold);
+        background: rgba(212, 175, 55, 0.1);
+        box-shadow: 0 0 20px var(--gold-low);
+        transform: scale(1.1);
+    }
+
+/* ANA DESTE (Seçim Alanı) */
+.deck-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 10px;
+    margin: 20px auto;
+    max-width: 1000px;
+    padding: 0 15px;
+}
+
+.tarot-card-back {
+    width: 70px;
+    height: 110px;
+    background: #111 url('/assets/images/card-back.jpg') center/cover;
+    border: 1px solid rgba(212, 175, 55, 0.3);
+    border-radius: 6px;
+    cursor: pointer;
+    transition: all 0.4s ease;
+    will-change: transform, opacity;
+}
+
+    .tarot-card-back:hover {
+        transform: translateY(-10px) scale(1.05);
+        border-color: var(--gold);
+        box-shadow: 0 10px 20px rgba(0,0,0,0.4);
+    }
+
+/* HİKAYE KUTUSU (En Çok Dağılan Yer Burasıydı) */
+.story-box {
+    background: rgba(212, 175, 55, 0.05);
+    border: 1px solid var(--gold-low);
+    border-left: 4px solid var(--gold);
+    padding: 30px;
+    margin: 40px auto;
+    max-width: 800px;
+    width: 85%;
+    font-size: 1.2rem;
+    line-height: 1.8;
+    border-radius: 4px 20px 20px 4px;
+    animation: fadeIn 1s ease-out forwards;
+    box-sizing: border-box;
+}
+
+    .story-box p {
+        margin: 0;
+        color: #cbd5e1;
+    }
+
+/* SONUÇ GRİDİ (Masaüstü vs Mobil Ayarı) */
+.results-grid {
+    display: grid;
+    /* Bilgisayarda kartların yan yana 3'lü dizilmesini zorlar, çok büyümesini engeller */
+    grid-template-columns: repeat(auto-fit, minmax(250px, 350px));
+    gap: 30px;
+    padding: 20px;
+    justify-content: center; /* Kartları merkeze toplar */
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.result-card {
+    border: 1px solid rgba(212, 175, 55, 0.2);
+    padding: 25px;
+    border-radius: 20px;
+    background: var(--card-bg);
+    transition: transform 0.4s ease, border-color 0.4s ease;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+    .result-card:hover {
+        border-color: var(--gold);
+        transform: translateY(-8px);
+    }
+
+    .result-card img {
+        width: 100%;
+        max-width: 180px; /* Bilgisayarda çok devasa olmasın */
+        height: auto;
+        aspect-ratio: 2 / 3.5; /* Klasik Tarot kartı oranı */
+        object-fit: cover;
+        margin-bottom: 20px;
+        border-radius: 12px;
+        border: 2px solid var(--gold);
+        box-shadow: 0 8px 25px rgba(0,0,0,0.5);
+    }
+
+    .result-card h3 {
+        font-size: 1.2rem;
+        margin: 10px 0;
+        letter-spacing: 1px;
+    }
+
+    .result-card p {
+        font-size: 0.95rem;
+        line-height: 1.6;
+        color: #94a3b8;
+    }
+
+/* MOBİL ÖZEL AYARLAR */
+@media (max-width: 768px) {
+    .results-grid {
+        grid-template-columns: repeat(2, 1fr); /* Mobilde net 2 sütun */
+        gap: 15px;
+        padding: 10px;
+    }
+
+    .result-card {
+        padding: 15px;
+        border-radius: 15px;
+    }
+
+        .result-card img {
+            max-width: 120px;
+            margin-bottom: 10px;
+        }
+
+        .result-card h3 {
+            font-size: 0.9rem;
+        }
+
+        .result-card p {
+            font-size: 0.8rem;
+        }
+
+    .story-box {
+        font-size: 1rem;
+        padding: 20px;
+        width: 92%;
+    }
+}
+
+/* ANİMASYONLAR */
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+/* BUTONLAR */
+.retry-btn, #reveal-btn {
+    margin: 40px auto;
+    padding: 16px 45px;
+    border: 2px solid var(--gold);
+    color: var(--gold);
+    font-weight: bold;
+    font-size: 1.1rem;
+    letter-spacing: 2px;
+    cursor: pointer;
+    background: rgba(212, 175, 55, 0.05);
+    border-radius: 50px;
+    transition: all 0.3s ease;
+    display: inline-block;
+}
+
+    .retry-btn:hover, #reveal-btn:hover {
+        background: var(--gold);
+        color: #000;
+        box-shadow: 0 0 30px rgba(212, 175, 55, 0.4);
+    }
+
+
+/* --- SADECE GİRİŞ MENÜSÜ DÜZELTMESİ --- */
+#setup-area .menu-grid {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    max-width: 450px;
+    margin: 30px auto;
+    padding: 0 20px;
+}
+
+#setup-area .menu-card {
+    background: linear-gradient(135deg, rgba(212, 175, 55, 0.1) 0%, rgba(10, 10, 15, 0.9) 100%);
+    border: 1px solid var(--gold-low);
+    padding: 20px;
+    border-radius: 12px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 60px; /* Butonun basılabilir alanını büyütür */
+}
+
+    #setup-area .menu-card:hover {
+        border-color: var(--gold);
+        background: rgba(212, 175, 55, 0.2);
+        transform: translateY(-3px);
+        box-shadow: 0 5px 15px rgba(0,0,0,0.3);
+    }
+
+    #setup-area .menu-card h3 {
+        margin: 0;
+        font-size: 1.3rem; /* Yazıyı büyüttük */
+        color: var(--gold);
+        letter-spacing: 2px;
+        text-transform: uppercase;
+    }
+
+/* Mobilde butonlar tam genişlik olsun */
+@media (max-width: 600px) {
+    #setup-area .menu-grid {
+        max-width: 100%;
+    }
+
+    #setup-area .menu-card h3 {
+        font-size: 1.1rem;
+    }
+}
+/* -------------------------------------- */

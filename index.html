@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Kehanet Odas&#x131;</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="/assets/tarot-style.css">
+</head>
+<body class="bg-black">
+
+    <div id="setup-area">
+    <h1 class="gold-text">TAROT KEHANETİ</h1>
+    <div class="menu-grid">
+        <div onclick="startReading('single')" class="menu-card">TEK KART</div>
+        <div onclick="startReading('triple')" class="menu-card">ÜÇ KART</div>
+        <div onclick="startReading('penta')" class="menu-card">BEŞ KART</div>
+    </div>
+    <select id="category" class="bg-black border-b border-gold text-white p-2 mt-5">
+        <option value="desc">GENEL BAKIŞ</option>
+        <option value="love">AŞK HAYATI</option>
+        <option value="career">PARA & KARİYER</option>
+        <option value="yesno">EVET / HAYIR</option> </select>
+    </select>
+</div>
+<div id="game-area" style="display:none;">
+    <h2 id="status-title" class="gold-text">KARTLARINI SEÇ</h2>
+    <div id="slot-container" class="slot-container"></div>
+    <div id="main-deck" class="deck-container"></div>
+    <button id="reveal-btn" onclick="showResult()" style="display:none;" class="retry-btn">KEHANETİ AÇ</button>
+</div>
+<div id="result-area" style="display:none;"></div>
+
+    <script src="/assets/tarot-game.js"></script>
+</body>
+</html>

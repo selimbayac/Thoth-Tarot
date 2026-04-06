@@ -1,0 +1,628 @@
+{
+  "cards": [
+    {
+      "id": 0,
+      "name": "The Fool (Mecnun / Joker)",
+      "desc": "Yeni başlangıçlar, macera, spontanlık ve varoluşun öncesini temsil eder. Riskli ama bereketli bir yolculuğun tohumları atılıyor.",
+      "love": "İlişkilerde bebek adımları, plansız heyecanlar ve kadersel yeni tanışmalar.",
+      "career": "Kariyerde sıfırdan başlama, risk alma ve yepyeni bir sayfa açma zamanı.",
+      "yesno": "Evet (dikkatli olmak kaydıyla)"
+    },
+    {
+      "id": 1,
+      "name": "The Magician (Büyücü)",
+      "desc": "Yoktan var etme, yaratıcılık, irade ve potansiyelin ortaya çıkması.",
+      "love": "İletişimin güçlendiği, etkileyici ve verimli bir aşk dönemi.",
+      "career": "Yeteneklerini sergileme, projeleri başlatma ve her şeye sahip olduğun bir süreç.",
+      "yesno": "Kesinlikle Evet"
+    },
+    {
+      "id": 2,
+      "name": "The High Priestess (Azize)",
+      "desc": "Dişil enerji, sezgi, gizli bilgi ve iç ses.",
+      "love": "Derin duygusal bağ, sezgilere güven ve sessiz bir uyum.",
+      "career": "Gözlem yaparak bilgi toplama ve doğru zamanı bekleme.",
+      "yesno": "İç sesine sor, cevap içinde"
+    },
+    {
+      "id": 3,
+      "name": "The Empress (İmparatoriçe)",
+      "desc": "Bolluk, bereket, doğurganlık ve dişil güç.",
+      "love": "Tutkulu, besleyici ve bereketli bir aşk ilişkisi.",
+      "career": "Maddi refah, yaratıcılık ve büyüme dönemi.",
+      "yesno": "Evet"
+    },
+    {
+      "id": 4,
+      "name": "The Emperor (İmparator)",
+      "desc": "Güç, disiplin, otorite ve istikrar.",
+      "love": "Güçlü, koruyucu ve net bir partner enerjisi.",
+      "career": "Liderlik, yapı ve başarı getirecek bir dönem.",
+      "yesno": "Evet"
+    },
+    {
+      "id": 5,
+      "name": "The Hierophant (Aziz)",
+      "desc": "Gelenek, inanç, eğitim ve manevi rehberlik.",
+      "love": "Geleneksel ve ciddi bir ilişki.",
+      "career": "Eğitim, mentorluk ve kurumsal destek.",
+      "yesno": "Geleneksel yol evet"
+    },
+    {
+      "id": 6,
+      "name": "The Lovers (Aşıklar)",
+      "desc": "Uyum, aşk, kadersel bağ ve seçim.",
+      "love": "Güçlü ruh bağı, barışma ve derin uyum.",
+      "career": "Ortaklık ve yaratıcı işbirlikleri.",
+      "yesno": "Evet"
+    },
+    {
+      "id": 7,
+      "name": "The Chariot (Araba)",
+      "desc": "İrade, kararlılık ve zorlukları aşma.",
+      "love": "İlişkide net kararlar ve ilerleme.",
+      "career": "Hedefe odaklanarak başarıya ulaşma.",
+      "yesno": "Evet"
+    },
+    {
+      "id": 8,
+      "name": "Strength (Güç)",
+      "desc": "İçsel güç, sabır ve toparlanma.",
+      "love": "Yumuşaklıkla kontrol edilen tutkulu ilişki.",
+      "career": "Zorlukları sabırla aşma ve motivasyon.",
+      "yesno": "Evet"
+    },
+    {
+      "id": 9,
+      "name": "The Hermit (Ermiş)",
+      "desc": "İçe dönme, yalnızlık ve içsel aydınlanma.",
+      "love": "Kendinle barışma ve yalnız kalma ihtiyacı.",
+      "career": "Kendi yolunu bulma ve derin araştırma.",
+      "yesno": "Şu an için hayır, içini dinle"
+    },
+    {
+      "id": 10,
+      "name": "Wheel of Fortune (Kader Çarkı)",
+      "desc": "Büyük değişim, kader ve dönüm noktası.",
+      "love": "Kadersel karşılaşmalar ve ani gelişmeler.",
+      "career": "Hayatını değiştirecek fırsatlar.",
+      "yesno": "Evet"
+    },
+    {
+      "id": 11,
+      "name": "Justice (Adalet)",
+      "desc": "Karma, denge ve hak edilen sonuç.",
+      "love": "Adil ve dengeli ilişki.",
+      "career": "Hukuki konular ve hak edilen başarı.",
+      "yesno": "Hak ettiğin neyse o"
+    },
+    {
+      "id": 12,
+      "name": "The Hanged Man (Asılan Adam)",
+      "desc": "Kurbanlık, yeni bakış açısı ve teslimiyet.",
+      "love": "Fedakârlık gereken veya askıda kalan ilişki.",
+      "career": "Bir süre bekleme ve farklı açıdan bakma.",
+      "yesno": "Şu an hayır"
+    },
+    {
+      "id": 13,
+      "name": "Death (Ölüm)",
+      "desc": "Dönüşüm, son ve yeni başlangıç.",
+      "love": "Eski ilişkinin bitişi ve yeniye yer açılması.",
+      "career": "Tamamen yeni bir sayfa.",
+      "yesno": "Eski bitiyor, yeni evet"
+    },
+    {
+      "id": 14,
+      "name": "Temperance (Denge)",
+      "desc": "Uyum, sabır ve orta yol.",
+      "love": "Dengeli ve huzurlu ilişki.",
+      "career": "Yavaş ama istikrarlı ilerleme.",
+      "yesno": "Zamanla evet"
+    },
+    {
+      "id": 15,
+      "name": "The Devil (Şeytan)",
+      "desc": "Bağımlılık, esaret ve maddi cazibe.",
+      "love": "Tutkulu ama toksik bağ veya yasak aşk.",
+      "career": "Maddi bereket ama bağımlılık uyarısı.",
+      "yesno": "Dikkatli ol, hayır"
+    },
+    {
+      "id": 16,
+      "name": "The Tower (Kule)",
+      "desc": "Ani yıkım, şok ve yeniden yapılanma.",
+      "love": "Ani ayrılık veya büyük sarsıntı.",
+      "career": "Köklü değişim ve eski düzenin çöküşü.",
+      "yesno": "Hayır (yıkım geliyor)"
+    },
+    {
+      "id": 17,
+      "name": "The Star (Yıldız)",
+      "desc": "Umut, şifa ve yenilenme.",
+      "love": "İyileşen ve parlayan aşk.",
+      "career": "Başarı ve ilham dönemi.",
+      "yesno": "Evet"
+    },
+    {
+      "id": 18,
+      "name": "The Moon (Ay)",
+      "desc": "Bilinçaltı, korkular, yanılsamalar ve sırlar.",
+      "love": "Güvensizlik, gizli ilişkiler ve duygusal karmaşa.",
+      "career": "Belirsizlik ve aldatıcı durumlar.",
+      "yesno": "Net değil, dikkat et"
+    },
+    {
+      "id": 19,
+      "name": "The Sun (Güneş)",
+      "desc": "Başarı, neşe, aydınlık ve olumlu gelişmeler.",
+      "love": "Mutlu, sıcak ve bereketli ilişki.",
+      "career": "Büyük başarı ve tanınma.",
+      "yesno": "Kesinlikle Evet"
+    },
+    {
+      "id": 20,
+      "name": "Judgement (Mahkeme)",
+      "desc": "Uyanış, yüzleşme ve yeni başlangıç.",
+      "love": "Geçmişle yüzleşme ve temizlenme.",
+      "career": "Hukuki sonuçlar ve yeni fırsatlar.",
+      "yesno": "Evet"
+    },
+    {
+      "id": 21,
+      "name": "The World (Dünya)",
+      "desc": "Tamamlanma, başarı ve döngünün kapanması.",
+      "love": "Tamamlanmış ve huzurlu ilişki.",
+      "career": "Hedefe ulaşma ve zafer.",
+      "yesno": "Evet"
+    },
+    {
+      "id": 22,
+      "name": "Ace of Pentacles (Tılsım Ası)",
+      "desc": "Somut başlangıçlar, maddi teklif ve bereket.",
+      "love": "Ciddi teklif, evlilik veya istikrarlı ilişki başlangıcı.",
+      "career": "Yeni iş, para veya yatırım fırsatı.",
+      "yesno": "Evet"
+    },
+    {
+      "id": 23,
+      "name": "Two of Pentacles (Tılsım İkilisi)",
+      "desc": "Denge kurma, seçenekler arasında git-gel.",
+      "love": "İki ilişki arasında kararsızlık.",
+      "career": "Çoklu görev ve denge çabası.",
+      "yesno": "Karar ver"
+    },
+    {
+      "id": 24,
+      "name": "Three of Pentacles (Tılsım Üçlüsü)",
+      "desc": "Ekip çalışması, ustalık ve destek.",
+      "love": "Ortak hedeflerde uyumlu ilişki.",
+      "career": "İşbirliği ve başarılı proje.",
+      "yesno": "Evet"
+    },
+    {
+      "id": 25,
+      "name": "Four of Pentacles (Tılsım Dörtlüsü)",
+      "desc": "Sahip çıkma, kontrol ve maddi güvenlik.",
+      "love": "Sahip olma ve kıskançlık enerjisi.",
+      "career": "Para biriktirme ama cimrilik uyarısı.",
+      "yesno": "Hayır"
+    },
+    {
+      "id": 26,
+      "name": "Five of Pentacles (Tılsım Beşlisi)",
+      "desc": "Maddi sıkıntı, yalnızlık ve zorluk.",
+      "love": "Destek eksikliği ve soğukluk.",
+      "career": "Finansal zorluk dönemi.",
+      "yesno": "Hayır"
+    },
+    {
+      "id": 27,
+      "name": "Six of Pentacles (Tılsım Altılısı)",
+      "desc": "Alma-verme dengesi ve cömertlik.",
+      "love": "Dengeli ve karşılıklı destek.",
+      "career": "Yardım alma veya verme.",
+      "yesno": "Evet"
+    },
+    {
+      "id": 28,
+      "name": "Seven of Pentacles (Tılsım Yedilisi)",
+      "desc": "Sabır, emek ve yavaş meyve.",
+      "love": "Uzun vadeli yatırım gereken ilişki.",
+      "career": "Emeklerin yavaş yavaş karşılığını görme.",
+      "yesno": "Sabret, evet gelecek"
+    },
+    {
+      "id": 29,
+      "name": "Eight of Pentacles (Tılsım Sekizlisi)",
+      "desc": "Ustalık, çalışkanlık ve planlama.",
+      "love": "Ciddi ilişki planları ve aile kurma.",
+      "career": "Titiz çalışma ve beceri geliştirme.",
+      "yesno": "Evet"
+    },
+    {
+      "id": 30,
+      "name": "Nine of Pentacles (Tılsım Dokuzlusu)",
+      "desc": "Bağımsızlık, lüks ve öz saygı.",
+      "love": "Kendine yeten, doyumlu ilişki.",
+      "career": "Maddi ve manevi başarı.",
+      "yesno": "Evet"
+    },
+    {
+      "id": 31,
+      "name": "Ten of Pentacles (Tılsım Onlusu)",
+      "desc": "Aile huzuru, miras ve uzun vadeli başarı.",
+      "love": "Evlilik, aile ve kalıcı ilişki.",
+      "career": "Finansal güvenlik ve miras.",
+      "yesno": "Evet"
+    },
+    {
+      "id": 32,
+      "name": "Page of Pentacles (Tılsım Prensi)",
+      "desc": "Toy, planlı ve çalışkan genç enerji.",
+      "love": "Genç, şımarık ama net bir partner.",
+      "career": "Yeni öğrenme ve planlı ilerleme.",
+      "yesno": "Evet"
+    },
+    {
+      "id": 33,
+      "name": "Knight of Pentacles (Tılsım Şövalyesi)",
+      "desc": "İstikrarlı, sabırlı ve güvenilir.",
+      "love": "Yavaş ama sağlam ilerleyen ilişki.",
+      "career": "Uzun vadeli plan ve istikrar.",
+      "yesno": "Evet"
+    },
+    {
+      "id": 34,
+      "name": "Queen of Pentacles (Tılsım Kraliçesi)",
+      "desc": "Bakım veren, bereketli dişil enerji.",
+      "love": "Sadık, annelik enerjisi yüksek partner.",
+      "career": "Pratik zekâ ve maddi başarı.",
+      "yesno": "Evet"
+    },
+    {
+      "id": 35,
+      "name": "King of Pentacles (Tılsım Kralı)",
+      "desc": "Başarılı, hırslı ve maddi güç.",
+      "love": "Güven veren ama manipülatif olabilen partner.",
+      "career": "Zirve ve finansal hakimiyet.",
+      "yesno": "Evet"
+    },
+    {
+      "id": 36,
+      "name": "Ace of Wands (Değnek Ası)",
+      "desc": "Yeni tutku, enerji ve harekete geçme.",
+      "love": "Tutkulu yeni başlangıç.",
+      "career": "Yeni projeler ve motivasyon patlaması.",
+      "yesno": "Evet"
+    },
+    {
+      "id": 37,
+      "name": "Two of Wands (Değnek İkilisi)",
+      "desc": "Planlama, gelecek vizyonu ve sabır.",
+      "love": "Uzaktan takip ve merak.",
+      "career": "Karar verme ve yeni ufuklar.",
+      "yesno": "Bekle"
+    },
+    {
+      "id": 38,
+      "name": "Three of Wands (Değnek Üçlüsü)",
+      "desc": "Bekleyişin meyvesi ve geniş bakış.",
+      "love": "İlerleyen ve genişleyen ilişki.",
+      "career": "Başarıya giden yolun görünmesi.",
+      "yesno": "Evet"
+    },
+    {
+      "id": 39,
+      "name": "Four of Wands (Değnek Dörtlüsü)",
+      "desc": "Kutlama, aile mutluluğu ve istikrar.",
+      "love": "Ciddi ilişki, nişan, evlilik enerjisi.",
+      "career": "Başarı kutlaması.",
+      "yesno": "Evet"
+    },
+    {
+      "id": 40,
+      "name": "Five of Wands (Değnek Beşlisi)",
+      "desc": "Rekabet, çatışma ve kafa karışıklığı.",
+      "love": "Tartışma ve ego çatışmaları.",
+      "career": "Rekabetçi ortam.",
+      "yesno": "Dikkat et"
+    },
+    {
+      "id": 41,
+      "name": "Six of Wands (Değnek Altılısı)",
+      "desc": "Başarı, takdir ve zafer.",
+      "love": "Takdir gören ve uyumlu ilişki.",
+      "career": "Kamu önünde başarı.",
+      "yesno": "Evet"
+    },
+    {
+      "id": 42,
+      "name": "Seven of Wands (Değnek Yedilisi)",
+      "desc": "Savunma, direnç ve mücadele.",
+      "love": "İlişkiyi savunma ihtiyacı.",
+      "career": "Rekabet karşısında ayakta kalma.",
+      "yesno": "Mücadele et"
+    },
+    {
+      "id": 43,
+      "name": "Eight of Wands (Değnek Sekizlisi)",
+      "desc": "Hızlı hareket, haber ve tamamlanma.",
+      "love": "Hızlı ilerleyen ilişki.",
+      "career": "Hızlı gelişmeler.",
+      "yesno": "Evet"
+    },
+    {
+      "id": 44,
+      "name": "Nine of Wands (Değnek Dokuzlusu)",
+      "desc": "Pes etme noktası, yorgunluk ve son savunma.",
+      "love": "Yorgun ama devam eden ilişki.",
+      "career": "Son virajdaki mücadele.",
+      "yesno": "Biraz daha dayan"
+    },
+    {
+      "id": 45,
+      "name": "Ten of Wands (Değnek Onlusu)",
+      "desc": "Aşırı yük, son çaba ve bitişe yaklaşma.",
+      "love": "Yük altında kalan ilişki.",
+      "career": "Çok fazla sorumluluk.",
+      "yesno": "Son bir gayret"
+    },
+    {
+      "id": 46,
+      "name": "Page of Wands (Değnek Prensi)",
+      "desc": "Heyecanlı, meraklı ve genç enerji.",
+      "love": "Tutkulu ama toy partner.",
+      "career": "Yeni fikirler ve denemeler.",
+      "yesno": "Evet"
+    },
+    {
+      "id": 47,
+      "name": "Knight of Wands (Değnek Şövalyesi)",
+      "desc": "Tutkulu, fevri ve hareketli.",
+      "love": "Ateşli ama istikrarsız aşk.",
+      "career": "Hızlı ama riskli adımlar.",
+      "yesno": "Dikkatli evet"
+    },
+    {
+      "id": 48,
+      "name": "Queen of Wands (Değnek Kraliçesi)",
+      "desc": "Güçlü, karizmatik ve kendine güvenen kadın.",
+      "love": "Tutkulu ve bağımsız partner.",
+      "career": "Liderlik ve yaratıcılık.",
+      "yesno": "Evet"
+    },
+    {
+      "id": 49,
+      "name": "King of Wands (Değnek Kralı)",
+      "desc": "Vizyoner, lider ve girişimci.",
+      "love": "Karizmatik ve planlı partner.",
+      "career": "Başarı ve liderlik.",
+      "yesno": "Evet"
+    },
+    {
+      "id": 50,
+      "name": "Ace of Cups (Kupa Ası)",
+      "desc": "Duygusal yeni başlangıç, aşk ve bereket.",
+      "love": "Yeni romantik ilişki veya derinleşme.",
+      "career": "Duygusal tatmin ve yaratıcılık.",
+      "yesno": "Evet"
+    },
+    {
+      "id": 51,
+      "name": "Two of Cups (Kupa İkilisi)",
+      "desc": "Karşılıklı aşk, uyum ve birlik.",
+      "love": "Ruh eşi enerjisi ve güçlü bağ.",
+      "career": "Sağlıklı ortaklık.",
+      "yesno": "Evet"
+    },
+    {
+      "id": 52,
+      "name": "Three of Cups (Kupa Üçlüsü)",
+      "desc": "Kutlama, dostluk ve sosyalleşme.",
+      "love": "Mutlu grup enerjisi ve kutlamalar.",
+      "career": "Takım çalışması ve başarı kutlaması.",
+      "yesno": "Evet"
+    },
+    {
+      "id": 53,
+      "name": "Four of Cups (Kupa Dörtlüsü)",
+      "desc": "Fırsatları görmeme ve içe kapanma.",
+      "love": "Duygusal soğukluk ve ilgisizlik.",
+      "career": "Teklifleri reddetme.",
+      "yesno": "Hayır"
+    },
+    {
+      "id": 54,
+      "name": "Five of Cups (Kupa Beşlisi)",
+      "desc": "Kayıp, üzüntü ve geçmişe takılma.",
+      "love": "Kalp kırıklığı ve yas.",
+      "career": "Duygusal kayıplar.",
+      "yesno": "Hayır"
+    },
+    {
+      "id": 55,
+      "name": "Six of Cups (Kupa Altılısı)",
+      "desc": "Nostalji, geçmişten gelen güzel haberler.",
+      "love": "Eski sevgili dönüşü veya saf aşk.",
+      "career": "Çocukluk hayallerinin gerçekleşmesi.",
+      "yesno": "Evet"
+    },
+    {
+      "id": 56,
+      "name": "Seven of Cups (Kupa Yedilisi)",
+      "desc": "Hayal, illüzyon ve çok fazla seçenek.",
+      "love": "Kararsızlık ve hayal kırıklığı riski.",
+      "career": "Gerçekçi olmayan planlar.",
+      "yesno": "Net değil"
+    },
+    {
+      "id": 57,
+      "name": "Eight of Cups (Kupa Sekizlisi)",
+      "desc": "Yol ayrımı, terk etme ve ruhsal arayış.",
+      "love": "İstenmeyen ayrılık.",
+      "career": "Daha anlamlı bir yola geçiş.",
+      "yesno": "Hayır"
+    },
+    {
+      "id": 58,
+      "name": "Nine of Cups (Kupa Dokuzlusu)",
+      "desc": "Duygusal tatmin ve dileklerin gerçekleşmesi.",
+      "love": "Mutluluk ve huzur.",
+      "career": "Başarı ve doyum.",
+      "yesno": "Evet"
+    },
+    {
+      "id": 59,
+      "name": "Ten of Cups (Kupa Onlusu)",
+      "desc": "Aile mutluluğu, tamamlanma ve kalıcı huzur.",
+      "love": "Mutlu yuva ve ideal ilişki.",
+      "career": "Duygusal tatmin.",
+      "yesno": "Evet"
+    },
+    {
+      "id": 60,
+      "name": "Page of Cups (Kupa Prensi)",
+      "desc": "Duygusal, romantik ve hassas genç.",
+      "love": "Romantik jestler ve duygusal teklif.",
+      "career": "Yaratıcı fikirler.",
+      "yesno": "Evet"
+    },
+    {
+      "id": 61,
+      "name": "Knight of Cups (Kupa Şövalyesi)",
+      "desc": "Romantik, idealist ve duygusal teklif.",
+      "love": "Beyaz atlı prens enerjisi.",
+      "career": "Sanatsal ve duygusal projeler.",
+      "yesno": "Evet"
+    },
+    {
+      "id": 62,
+      "name": "Queen of Cups (Kupa Kraliçesi)",
+      "desc": "Duygusal, sezgisel ve şefkatli kadın.",
+      "love": "Derin sevgi ve empati.",
+      "career": "Duygusal zeka gerektiren işler.",
+      "yesno": "Evet"
+    },
+    {
+      "id": 63,
+      "name": "King of Cups (Kupa Kralı)",
+      "desc": "Duygusal olgunluk, şefkat ve denge.",
+      "love": "Destekleyici ve sevgi dolu partner.",
+      "career": "Danışmanlık ve liderlik.",
+      "yesno": "Evet"
+    },
+    {
+      "id": 64,
+      "name": "Ace of Swords (Kılıç Ası)",
+      "desc": "Netlik, zihinsel güç ve yeni fikir.",
+      "love": "Dürüst ve net iletişim.",
+      "career": "Keskin kararlar ve zafer.",
+      "yesno": "Evet"
+    },
+    {
+      "id": 65,
+      "name": "Two of Swords (Kılıç İkilisi)",
+      "desc": "Kararsızlık ve kör nokta.",
+      "love": "Karar verememe.",
+      "career": "Tıkanıklık.",
+      "yesno": "Karar ver"
+    },
+    {
+      "id": 66,
+      "name": "Three of Swords (Kılıç Üçlüsü)",
+      "desc": "Kalp kırıklığı, ihanet ve acı.",
+      "love": "Üçüncü kişi veya ayrılık acısı.",
+      "career": "Zor kararlar.",
+      "yesno": "Hayır"
+    },
+    {
+      "id": 67,
+      "name": "Four of Swords (Kılıç Dörtlüsü)",
+      "desc": "Dinlenme, iyileşme ve mola.",
+      "love": "Duygusal dinlenme.",
+      "career": "İzin ve toparlanma.",
+      "yesno": "Şu an hayır"
+    },
+    {
+      "id": 68,
+      "name": "Five of Swords (Kılıç Beşlisi)",
+      "desc": "Kazanmak uğruna kaybetme ve çatışma.",
+      "love": "Toksik tartışma.",
+      "career": "Piramit oyunu.",
+      "yesno": "Hayır"
+    },
+    {
+      "id": 69,
+      "name": "Six of Swords (Kılıç Altılısı)",
+      "desc": "Geçiş, iyileşme yolculuğu.",
+      "love": "Zor ayrılık sonrası iyileşme.",
+      "career": "Daha iyi bir yere geçiş.",
+      "yesno": "Evet (yeni yere)"
+    },
+    {
+      "id": 70,
+      "name": "Seven of Swords (Kılıç Yedilisi)",
+      "desc": "Aldatma, strateji ve kaçınma.",
+      "love": "Gizli ilişkiler ve yalan.",
+      "career": "Dikkatli ol, hile var.",
+      "yesno": "Hayır"
+    },
+    {
+      "id": 71,
+      "name": "Eight of Swords (Kılıç Sekizlisi)",
+      "desc": "Kendi yarattığın esaret ve korku.",
+      "love": "Kendini kapana kısılmış hissetme.",
+      "career": "Çıkış yolu var, gözlerini aç.",
+      "yesno": "Kendini kurtar"
+    },
+    {
+      "id": 72,
+      "name": "Nine of Swords (Kılıç Dokuzlusu)",
+      "desc": "Kaygı, kabus ve aşırı düşünme.",
+      "love": "Endişe ve güvensizlik.",
+      "career": "Stres dönemi.",
+      "yesno": "Hayır"
+    },
+    {
+      "id": 73,
+      "name": "Ten of Swords (Kılıç Onlusu)",
+      "desc": "Tam bitiş, dip nokta ve yeni başlangıç.",
+      "love": "Acılı ayrılık.",
+      "career": "İşin sonu.",
+      "yesno": "Bitti"
+    },
+    {
+      "id": 74,
+      "name": "Page of Swords (Kılıç Prensi)",
+      "desc": "Meraklı, zeki ama fevri genç.",
+      "love": "İletişim odaklı ama güvensiz partner.",
+      "career": "Yeni fikirler ve araştırma.",
+      "yesno": "Evet"
+    },
+    {
+      "id": 75,
+      "name": "Knight of Swords (Kılıç Şövalyesi)",
+      "desc": "Hızlı, keskin ve fevri.",
+      "love": "Ani ve sert iletişim.",
+      "career": "Hızlı kararlar.",
+      "yesno": "Dikkatli evet"
+    },
+    {
+      "id": 76,
+      "name": "Queen of Swords (Kılıç Kraliçesi)",
+      "desc": "Net, bağımsız ve mantıklı kadın.",
+      "love": "Sınırları net partner.",
+      "career": "Keskin zekâ ve liderlik.",
+      "yesno": "Evet"
+    },
+    {
+      "id": 77,
+      "name": "King of Swords (Kılıç Kralı)",
+      "desc": "Mantıklı, otoriter ve adil erkek.",
+      "love": "Dürüst ama soğuk partner.",
+      "career": "Hukuk, liderlik ve net kararlar.",
+      "yesno": "Evet"
+    }
+  ]
+}
